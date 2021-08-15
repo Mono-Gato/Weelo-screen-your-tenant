@@ -7,10 +7,13 @@
  ╚═════╝    ╚═╝   ╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝╚══════╝╚══════╝
 */
 
-$transition: all .3s ease;
-$box-shadow: 0px 3px 20px rgba(20, 0, 100, .25);
-
 $mainBackground520: '../images/background/background-520px-min.jpg';
 $mainBackground1240: '../images/background/background-1240px-min.jpg';
 $mainBackground2200: '../images/background/background-2200px-min.jpg';
 
+$transition: all .3s ease;
+$box-shadow: 0px 3px 20px rgba(20, 0, 100, .25);
+
+$border-radius_small: 5px;
+$border-radius_normal: 10px;
+$border-radius_large: 20px;

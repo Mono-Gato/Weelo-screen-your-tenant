@@ -19,7 +19,7 @@
         background-color: $acent;
         padding: 10px;
         font-size: $font-size_normal;
-        border-radius: 10px;
+        border-radius: $border-radius_normal;
         width: max-content;
         margin: $space_extra-small auto 0 auto;
         & b{
