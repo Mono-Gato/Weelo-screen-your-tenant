@@ -10,6 +10,9 @@
 @import "./tokens/color.scss";
 @import "./tokens/typo.scss";
 @import "./tokens/spacing.scss";
+@import "./tokens/utilities.scss";
+
+
 
 *{
     box-sizing: border-box;
@@ -50,6 +53,16 @@ body, html{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: $body_text;
-    background-color: $primary;
-    
+    background-color: $white_contrast;
+}
+
+.mainBackground{
+    width: 100%;
+    height: 500px;
+    background-color: $gradient;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url($mainBackground520);
 }
