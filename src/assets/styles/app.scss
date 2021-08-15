@@ -1,5 +1,55 @@
-body{
+/*
+ ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗     
+██╔════╝ ██║     ██╔═══██╗██╔══██╗██╔══██╗██║     
+██║  ███╗██║     ██║   ██║██████╔╝███████║██║     
+██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║     
+╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗
+ ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+*/
+
+@import "./tokens/color.scss";
+@import "./tokens/typo.scss";
+@import "./tokens/spacing.scss";
+
+*{
+    box-sizing: border-box;
     margin: 0;
-    background-color: grey;
-    color: white;
+    padding: 0;
+}
+:root{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: $family;
+    src: url('../fonts/NeuzeitGro-Lig.ttf') format($format);
+    font-style: $style;
+    font-weight: $light;
+}
+@font-face {
+    font-family: $family;
+    src: url('../fonts/NeuzeitGro-Reg.ttf') format($format);
+    font-style: $style;
+    font-weight: $regular;
+}
+@font-face {
+    font-family: $family;
+    src: url('../fonts/NeuzeitGro-Bol.ttf') format($format);
+    font-style: $style;
+    font-weight: $bold;
+}
+@font-face {
+    font-family: $family;
+    src: url('../fonts/NeuzeitGro-Bla.ttf') format($format);
+    font-style: $style;
+    font-weight: $black;
+}
+
+body, html{
+    font-family: $font;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: $body_text;
+    background-color: $white_contrast;
+    
 }
