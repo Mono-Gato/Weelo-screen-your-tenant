@@ -10,6 +10,7 @@
     box-shadow: $box-shadow;
 
     position: fixed;
+    z-index: 9;
 
     width: 100%;
     padding: $space_small;
@@ -23,7 +24,7 @@
         height: auto;
         flex-flow: row nowrap;
         position: relative;
-        z-index: 5
+        z-index: 9;
     }
 }
 
@@ -57,14 +58,14 @@
         right: -100vw;
         top: 0;
         bottom: 0;
-        width: 100%;
+        width: auto;
         height: 100vh;
         flex-flow: column nowrap;
         transition: $transition;
         
         list-style: none;
         
-        overflow-y: scroll;
+        overflow-y: auto;
         
     }
 

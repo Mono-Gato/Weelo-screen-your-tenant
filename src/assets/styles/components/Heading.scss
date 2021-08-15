@@ -7,9 +7,9 @@
     padding-top: 112px;
     text-align: center;
     color: $white_contrast;
-    position: relative;
-    z-index: 9;
     margin-bottom: $space_large;
+    position: relative;
+    z-index: 1;
     & h1{
         font-weight: $black;
         font-size: $font-size_extra-large;
