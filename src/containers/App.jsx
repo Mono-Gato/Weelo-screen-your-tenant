@@ -3,13 +3,17 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Heading from '../components/Heading';
+import ScreenTenant from '../components/ScreenTenant';
 
 function App() {
   return (
     <div>
       <div className='mainBackground' />
       <Header />
-      <Heading />
+      <main>
+        <Heading />
+        <ScreenTenant />
+      </main>
     </div>
   );
 }
