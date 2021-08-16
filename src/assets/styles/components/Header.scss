@@ -165,32 +165,6 @@
             transform: rotate(-180deg);
         }
     }
-    &--footer{
-        background-color: $cream;
-        width: 100vw;
-        padding: 40px $space_normal;
-        margin-top: $space_normal;
-        border-top-left-radius: $border-radius_large;
-        border-top-right-radius: $border-radius_large;
-        &--social{
-            margin-bottom: $space_small;
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $space_extra-small;
-        }
-        & a{
-            width: 45px;
-            height: 45px;
-            padding: $space_mini;
-            margin: auto;
-        }
-        & span{
-            font-size: $font-size_small;
-            line-height: $font-size_small;
-            text-align: center;
-        }
-    }
 }
 .dropdown-item{
     transition: $transition;

@@ -4,6 +4,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Heading from '../components/Heading';
 import ScreenTenant from '../components/ScreenTenant';
+import Footer from '../components/Footer';
 
 const GooglePlayURL = 'https://play.google.com/store';
 const AppStoreURL = 'https://www.apple.com/co/app-store/';
@@ -34,6 +35,16 @@ function App() {
           AppleURL={AppStoreURL}
         />
       </main>
+      <Footer
+        TwitterURL={TwitterURL}
+        LinkedInURL={LinkedInURL}
+        InstagramURL={InstagramURL}
+        TiktokURL={TiktokURL}
+        YoutubeURL={YoutubeURL}
+        FacebookURL={FacebookURL}
+        GoogleURL={GooglePlayURL}
+        AppleURL={AppStoreURL}
+      />
     </div>
   );
 }

@@ -1,3 +1,6 @@
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/state-in-constructor */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
 import ScreenTenantForm from './ScreenTenantForm';
