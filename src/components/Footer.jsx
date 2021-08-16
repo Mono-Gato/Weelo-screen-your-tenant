@@ -1,5 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../assets/styles/components/Footer.scss';
 
@@ -19,37 +20,37 @@ class Footer extends React.Component {
           />
         </div>
         <div className='footer__anchors'>
-          <a
-            href='http://'
+          <Link
+            to={this.props.OurServicesPath}
             target='_blank'
             rel='noopener noreferrer'
           >
             <li>our services</li>
-          </a>
-          <a
-            href='http://'
+          </Link>
+          <Link
+            to={this.props.AboutPath}
             target='_blank'
             rel='noopener noreferrer'
           >
             <li>about</li>
 
-          </a>
-          <a
-            href='http://'
+          </Link>
+          <Link
+            to={this.props.TermOfUsePath}
             target='_blank'
             rel='noopener noreferrer'
           >
             <li>term of use</li>
 
-          </a>
-          <a
-            href='http://'
+          </Link>
+          <Link
+            to={this.props.PrivacyPolicyPath}
             target='_blank'
             rel='noopener noreferrer'
           >
             <li>privacy policy</li>
 
-          </a>
+          </Link>
         </div>
         <div className='footer__social'>
           <Social

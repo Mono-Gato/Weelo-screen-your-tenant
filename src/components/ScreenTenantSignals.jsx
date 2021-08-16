@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
 import '../assets/styles/components/ScreenTenant.scss';

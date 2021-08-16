@@ -8,6 +8,8 @@
     background-color: $cream;
     border-radius: $border-radius_large $border-radius_large  0 0;
     padding: $space_normal $space_small;
+    position: relative;
+    z-index: 1;
     &__logo{
         margin: auto;
         width: 100px;

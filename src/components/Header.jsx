@@ -28,7 +28,7 @@ class Header extends React.Component {
         <div className='header__menu d-none d-lg-flex'>
           <li className='menu__item'>
             <a
-              href
+              href='/'
               className='menu__item--anchor d-flex align-items-center'
               type='button'
               data-toggle='collapse'
@@ -42,11 +42,11 @@ class Header extends React.Component {
                 style={{ backgroundImage: `url(${IconTriangle})` }}
               />
             </a>
-            <ul className='collapse' id='collapseExample'>
+            <ul className='position-absolute collapse ' id='collapseExample'>
               <li className='menu__item dropdown-item '>
                 <Link
                   to={this.props.TenantScreeningPath}
-                  className='menu__item--anchor '
+                  className='menu__item--anchor'
                   type='button'
                 >
                   tenant screening
@@ -83,7 +83,7 @@ class Header extends React.Component {
           </li>
 
           <a
-            href
+            href='/'
             type='button'
             className='menu__item--signIn d-flex align-items-center'
             data-toggle='modal'
@@ -142,7 +142,7 @@ class Header extends React.Component {
                   <span>get the app</span>
                 </a>
                 <a
-                  href
+                  href='/'
                   type='button'
                   className='menu__list--user--signIn d-flex align-items-center'
                   data-toggle='modal'
@@ -160,7 +160,7 @@ class Header extends React.Component {
               <div className='menu__list--container'>
                 <li className='menu__list--item'>
                   <a
-                    href
+                    href='/'
                     className='menu__list--item--anchor d-flex align-items-center'
                     type='button'
                     data-toggle='collapse'

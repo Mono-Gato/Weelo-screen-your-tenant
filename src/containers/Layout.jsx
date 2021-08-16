@@ -18,8 +18,11 @@ const AppStoreURL = 'https://www.apple.com/co/app-store/';
 const GetTheAppURL = 'https://play.google.com/store';
 const TenantScreeningPath = '/services/tenant-screening';
 const CollectRentOnline = '/services/collect-rent-online';
-const PayRentOnline = './services/pay-rent-online';
+const PayRentOnline = '/services/pay-rent-online';
+const OurServicesPath = '/services';
 const AboutPath = '/about';
+const TermOfUsePath = '/term-of-use';
+const PrivacyPolicyPath = '/privacy-policy';
 
 function Layout(props) {
   return (
@@ -51,6 +54,10 @@ function Layout(props) {
         FacebookURL={FacebookURL}
         GoogleURL={GooglePlayURL}
         AppleURL={AppStoreURL}
+        AboutPath={AboutPath}
+        OurServicesPath={OurServicesPath}
+        TermOfUsePath={TermOfUsePath}
+        PrivacyPolicyPath={PrivacyPolicyPath}
       />
     </>
   );
