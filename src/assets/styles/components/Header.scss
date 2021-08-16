@@ -17,6 +17,8 @@
     
     &__logo{
         width: 85px;
+        position: relative;
+        z-index: 999;
     }
 
     &__navigation{

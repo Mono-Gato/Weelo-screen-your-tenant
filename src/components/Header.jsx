@@ -17,11 +17,13 @@ class Header extends React.Component {
     return (
       <header className='header d-flex flex-row align-items-center justify-content-between'>
         <div className='header__logo'>
-          <img
-            className='header__logo--image img-fluid'
-            src={Logo}
-            alt='weelo a technology group'
-          />
+          <Link to='/'>
+            <img
+              className='header__logo--image img-fluid'
+              src={Logo}
+              alt='weelo a technology group'
+            />
+          </Link>
         </div>
 
         <div
