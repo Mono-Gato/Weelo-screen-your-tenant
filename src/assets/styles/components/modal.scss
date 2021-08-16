@@ -1,0 +1,115 @@
+@import "../tokens/color.scss";
+@import "../tokens/typo.scss";
+@import "../tokens/spacing.scss";
+@import "../tokens/utilities.scss";
+
+.modal{
+    &-content{
+        border-radius: $border-radius_large;
+    }
+    &-header{
+        padding: $space_small;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0;
+       & .close{
+           margin: $space_extra-small 0 $space_extra-small auto;
+           padding: 0;
+           font-size: $font-size_large;
+           font-weight: $black;
+           background: $gradient;
+           color: $white_contrast;
+           opacity: 1;
+           text-shadow: none;
+           border-radius: $border-radius_small;
+           width: 25px;
+           height: 25px;
+           position: absolute;
+           right: 20px;
+           transition: $transition;
+           font-family: $font !important;
+           &:hover{
+               opacity: 1 !important;
+               transform: scale(1.1);
+           }
+       }
+       & .modal-title{
+        font-size: $font-size_large;
+        font-weight: $black;
+        color: $primary;
+    }
+    }
+    
+    &-body{
+        padding: 0 $space_small;
+        font-size: $font-size_small;
+        line-height: $font-size_small;
+        font-weight: $light;
+        & .form{
+            &-control{
+                border-radius: $border-radius_normal;
+            font-size: $font-size_small;
+            line-height: $font-size_small;
+            font-weight: $light;
+            color: $body_text;
+            border-color: $gray;
+                &:focus{
+                    border-color: $primary;
+                    box-shadow: 0 0 5px rgba(20, 0, 100, .25);
+                }
+            }
+            &-footer{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                
+                & .btn{
+                    border-radius: $border-radius_normal;
+                    padding:$space_mini $space_normal;
+                    font-size: $font-size_small;
+                    font-weight: $bold;
+                    margin: $space_small $space_small 0 $space_small ;
+                    border: none;
+                    outline: none;
+                    transition: $transition;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                & .btn-primary{
+                    background: $gradient;
+                    color: $white_contrast;
+                    &:hover{
+                        color: $cream;
+                    }
+                }
+                & .btn-secondary{
+                    background: $gray;
+                    &:hover{
+                        background: $acent;
+                    }
+                }
+            }
+        }
+    }
+    &-footer{
+        justify-content: center;
+        border: 0;
+        padding: $space_small;
+        & a{
+            font-size: $font-size_small;
+            color: $primary;
+            font-weight: $light;
+            text-decoration: none;
+            transition: $transition;
+            & span{
+                font-weight: $bold;
+                
+            }
+            &:hover span{
+                color: $acent;
+                text-decoration: underline;
+            }
+        }
+    }
+}
