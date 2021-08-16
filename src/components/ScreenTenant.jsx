@@ -78,8 +78,8 @@ class ScreenTenant extends React.Component {
 
   render() {
     return (
-      <section className='screenTenant'>
-        <div className='screenTenant__container container col-11 mx-auto col-md-10 col-lg-12'>
+      <section className='screenTenant container'>
+        <div className='screenTenant__container col-11 mx-auto col-md-10 col-lg-12'>
           <ScreenTenantForm
             onChange={this.handleChange}
             formValues={this.state.form}

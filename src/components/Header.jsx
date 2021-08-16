@@ -1,7 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Logo from '../assets/images/weelo-logo.svg';
 import IconTriangle from '../assets/images/triangle.svg';
@@ -47,19 +47,29 @@ class Header extends React.Component {
             </label>
             <ul className='navigation__menu--list d-flex justify-content-between'>
               <div className='menu__list--user d-flex flex-column align-items-center'>
-                <a href='/' className='menu__list--user--app d-flex align-items-center'>
+                <a href='https://play.google.com/store' className='menu__list--user--app d-flex align-items-center'>
                   <img className='img-fluid' src={IconWeeloApp} alt='icon app weelo' />
                   <span>get the app</span>
                 </a>
-                <a href='/' className='menu__list--user--signIn d-flex align-items-center'>
-                  <img className='img-fluid' src={IconUser} alt='icon user' />
+                <Link
+                  to='/'
+                  className='menu__list--user--signIn d-flex align-items-center'
+                  data-toggle='modal'
+                  data-target='#loginModal'
+                >
+                  <img
+                    className='img-fluid'
+                    src={IconUser}
+                    alt='icon user'
+
+                  />
                   sign in
-                </a>
+                </Link>
               </div>
               <div className='menu__list--container'>
                 <li className='menu__list--item'>
-                  <a
-                    href='/'
+                  <Link
+                    to='/'
                     className='menu__list--item--anchor d-flex align-items-center'
                     type='button'
                     data-toggle='collapse'
@@ -72,45 +82,45 @@ class Header extends React.Component {
                       className='icon__triangle '
                       style={{ backgroundImage: `url(${IconTriangle})` }}
                     />
-                  </a>
+                  </Link>
                   <ul className='collapse' id='collapseExample'>
                     <li className='menu__list--item dropdown-item '>
-                      <a
-                        href='/'
+                      <Link
+                        to='/'
                         className='menu__list--item--anchor '
                         type='button'
                       >
                         tenant screening
-                      </a>
+                      </Link>
                     </li>
                     <li className='menu__list--item dropdown-item '>
-                      <a
-                        href='/'
+                      <Link
+                        to='/'
                         className='menu__list--item--anchor '
                         type='button'
                       >
                         collect rent online
-                      </a>
+                      </Link>
                     </li>
                     <li className='menu__list--item dropdown-item '>
-                      <a
-                        href='/'
+                      <Link
+                        to='/'
                         className='menu__list--item--anchor '
                         type='button'
                       >
                         pay rent online
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className='menu__list--item'>
-                  <a
-                    href='/'
+                  <Link
+                    to='/about'
                     className='menu__list--item--anchor d-flex'
                     type='button'
                   >
                     about
-                  </a>
+                  </Link>
                 </li>
               </div>
 

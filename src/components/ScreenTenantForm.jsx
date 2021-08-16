@@ -1,6 +1,10 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 
 import '../assets/styles/components/ScreenTenant.scss';
+
+import Modal from './Modal';
 
 class ScreenTenantForm extends React.Component {
 
@@ -50,11 +54,13 @@ class ScreenTenantForm extends React.Component {
           onClick={this.handleClick}
           type='submit'
           className='btn screenTenant__form--button'
+          data-toggle='modal'
+          data-target='#loginModal'
         >
           screen tenant
         </button>
+        <Modal />
       </form>
-
     );
   }
 }
