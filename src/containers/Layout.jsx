@@ -15,6 +15,12 @@ const FacebookURL = 'https://www.facebook.com/weelo.col';
 const GooglePlayURL = 'https://play.google.com/store';
 const AppStoreURL = 'https://www.apple.com/co/app-store/';
 
+const GetTheAppURL = 'https://play.google.com/store';
+const TenantScreeningPath = '/services/tenant-screening';
+const CollectRentOnline = '/services/collect-rent-online';
+const PayRentOnline = './services/pay-rent-online';
+const AboutPath = '/about';
+
 function Layout(props) {
   return (
     <>
@@ -26,6 +32,11 @@ function Layout(props) {
         TiktokURL={TiktokURL}
         YoutubeURL={YoutubeURL}
         FacebookURL={FacebookURL}
+        GetTheAppURL={GetTheAppURL}
+        TenantScreeningPath={TenantScreeningPath}
+        CollectRentOnline={CollectRentOnline}
+        PayRentOnline={PayRentOnline}
+        AboutPath={AboutPath}
       />
       <main>
         <Heading />

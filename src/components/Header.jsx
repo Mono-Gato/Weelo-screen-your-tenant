@@ -25,9 +25,92 @@ class Header extends React.Component {
             />
           </Link>
         </div>
+        <div className='header__menu d-none d-lg-flex'>
+          <li className='menu__item'>
+            <a
+              href
+              className='menu__item--anchor d-flex align-items-center'
+              type='button'
+              data-toggle='collapse'
+              data-target='#collapseExample'
+              aria-expanded='false'
+              aria-controls='collapseExample'
+            >
+              our services
+              <i
+                className='icon__triangle '
+                style={{ backgroundImage: `url(${IconTriangle})` }}
+              />
+            </a>
+            <ul className='collapse' id='collapseExample'>
+              <li className='menu__item dropdown-item '>
+                <Link
+                  to={this.props.TenantScreeningPath}
+                  className='menu__item--anchor '
+                  type='button'
+                >
+                  tenant screening
+                </Link>
+              </li>
+              <li className='menu__item dropdown-item '>
+                <Link
+                  to={this.props.CollectRentOnline}
+                  className='menu__item--anchor '
+                  type='button'
+                >
+                  collect rent online
+                </Link>
+              </li>
+              <li className='menu__item dropdown-item '>
+                <Link
+                  to={this.props.PayRentOnline}
+                  className='menu__item--anchor '
+                  type='button'
+                >
+                  pay rent online
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className='menu__item'>
+            <Link
+              to={this.props.AboutPath}
+              className='menu__item--anchor d-flex'
+              type='button'
+            >
+              about
+            </Link>
+          </li>
+
+          <a
+            href
+            type='button'
+            className='menu__item--signIn d-flex align-items-center'
+            data-toggle='modal'
+            data-target='#loginModal'
+          >
+            <img
+              className='img-fluid'
+              src={IconUser}
+              alt='icon user'
+
+            />
+            sign in
+          </a>
+          <a
+            target='_blank'
+            href={this.props.GetTheAppURL}
+            className='menu__item--app d-flex align-items-center'
+            rel='noreferrer'
+          >
+            <img className='img-fluid' src={IconWeeloApp} alt='icon app weelo' />
+            <span>get the app</span>
+          </a>
+
+        </div>
 
         <div
-          className='header__navigation d-flex align-item-center justify-content-end'
+          className='header__navigation d-flex align-item-center justify-content-end d-lg-none'
           id='menu-modal-inject'
         >
           <nav
@@ -49,12 +132,18 @@ class Header extends React.Component {
             </label>
             <ul className='navigation__menu--list d-flex justify-content-between'>
               <div className='menu__list--user d-flex flex-column align-items-center'>
-                <a href='https://play.google.com/store' className='menu__list--user--app d-flex align-items-center'>
+                <a
+                  target='_blank'
+                  href={this.props.GetTheAppURL}
+                  className='menu__list--user--app d-flex align-items-center'
+                  rel='noreferrer'
+                >
                   <img className='img-fluid' src={IconWeeloApp} alt='icon app weelo' />
                   <span>get the app</span>
                 </a>
-                <Link
-                  to='/'
+                <a
+                  href
+                  type='button'
                   className='menu__list--user--signIn d-flex align-items-center'
                   data-toggle='modal'
                   data-target='#loginModal'
@@ -66,12 +155,12 @@ class Header extends React.Component {
 
                   />
                   sign in
-                </Link>
+                </a>
               </div>
               <div className='menu__list--container'>
                 <li className='menu__list--item'>
-                  <Link
-                    to='/'
+                  <a
+                    href
                     className='menu__list--item--anchor d-flex align-items-center'
                     type='button'
                     data-toggle='collapse'
@@ -84,11 +173,11 @@ class Header extends React.Component {
                       className='icon__triangle '
                       style={{ backgroundImage: `url(${IconTriangle})` }}
                     />
-                  </Link>
+                  </a>
                   <ul className='collapse' id='collapseExample'>
                     <li className='menu__list--item dropdown-item '>
                       <Link
-                        to='/'
+                        to={this.props.TenantScreeningPath}
                         className='menu__list--item--anchor '
                         type='button'
                       >
@@ -97,7 +186,7 @@ class Header extends React.Component {
                     </li>
                     <li className='menu__list--item dropdown-item '>
                       <Link
-                        to='/'
+                        to={this.props.CollectRentOnline}
                         className='menu__list--item--anchor '
                         type='button'
                       >
@@ -106,7 +195,7 @@ class Header extends React.Component {
                     </li>
                     <li className='menu__list--item dropdown-item '>
                       <Link
-                        to='/'
+                        to={this.props.PayRentOnline}
                         className='menu__list--item--anchor '
                         type='button'
                       >
@@ -117,7 +206,7 @@ class Header extends React.Component {
                 </li>
                 <li className='menu__list--item'>
                   <Link
-                    to='/about'
+                    to={this.props.AboutPath}
                     className='menu__list--item--anchor d-flex'
                     type='button'
                   >
