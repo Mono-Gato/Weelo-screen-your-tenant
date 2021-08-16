@@ -1,0 +1,24 @@
+@import "../tokens/color.scss";
+@import "../tokens/spacing.scss";
+@import "../tokens/utilities.scss";
+
+.store{
+    margin-bottom: $space_small;
+    & a{
+        transition: $transition; 
+        &:hover{
+            transform: scale(1.05);
+        }
+        & img{
+            max-height: 40px ;
+        }
+    }
+    &--separator{
+        background-color: $gray;
+        color: $gray;
+        width: 1px;
+        margin-left: $space_mini;
+        margin-right: $space_mini;
+        height: 30px;
+    }
+}

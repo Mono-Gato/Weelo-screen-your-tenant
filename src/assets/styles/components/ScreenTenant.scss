@@ -2,3 +2,109 @@
 @import "../tokens/typo.scss";
 @import "../tokens/spacing.scss";
 @import "../tokens/utilities.scss";
+
+.screenTenant{
+    position: relative;
+    z-index: 1;
+    &__container{
+        background-color: $white_contrast;
+        border-radius: $border-radius_large;
+        box-shadow: $box-shadow;
+        padding: $space_normal $space_normal 0 $space_normal;
+    }
+    &__form{
+        font-size: $font-size_small;
+        font-weight: $light;
+        & h4{
+            color: $primary;
+            font-size: $font-size_large;
+            font-weight: $bold;
+            text-align: center;
+            margin: 0;
+        }
+        &--input{
+            border-radius: $border-radius_normal;
+            font-size: $font-size_small;
+            line-height: $font-size_small;
+            font-weight: $light;
+            color: $body_text;
+            border-color: $gray;
+            &:focus{
+                border-color: $primary;
+                box-shadow: 0 0 5px rgba(20, 0, 100, .25);
+            }
+        }
+        &--button{
+            background: $gradient;
+            color: $white_contrast;
+            border-radius: $border-radius_normal;
+            padding:$space_mini $space_normal ;
+            font-size: $font-size_small;
+            font-weight: $bold;
+            margin: $space_small auto $space_small auto;
+            transition: $transition;
+            &:hover{
+                transform: scale(1.1);
+                color: $cream;
+            }
+        }
+    }
+    &__signals{
+        background-color: $cream;
+        margin-left: -$space_normal ;
+        margin-right: -$space_normal;
+        padding: $space_normal;
+        &--title{
+            display: flex;
+            color: $primary;
+            font-weight: $black;
+            justify-content: center;
+            align-items: center;
+            & span{
+                font-size: 4.5rem;
+                margin-right: $space_extra-small;
+            }
+            & h4{
+                font-size: $font-size_normal;
+                text-align: left;
+                font-weight: $black;
+                width: 102px;
+            }
+        }
+        &--info{
+            font-size: $font-size_small;
+            font-weight: $light;
+            overflow-y: scroll;
+            max-height: 150px;
+            margin-top: $space_extra-small;
+            
+            & li{
+                list-style: inside;
+            }
+
+            &::-webkit-scrollbar{
+                background: $white_contrast;
+                width: 8px;
+                border-radius: 20px;
+            }
+            &::-webkit-scrollbar-track{
+                background: $white_contrast;
+                border-radius: 20px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: $gradient;
+                border-radius: 20px;
+            }
+            &::-webkit-scrollbar-thumb:hover{
+                background:$primary
+            }
+        }
+    }
+}
+.form-group{
+    margin-top: $space_mini;
+    margin-bottom: 0;
+    &:nth-child(2){
+        margin-top: $space_small ;
+    }
+}

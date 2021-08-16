@@ -15,13 +15,6 @@ import IconFacebook from '../assets/images/social/facebook.svg';
 
 import '../assets/styles/components/Header.scss';
 
-const TwitterURL = 'https://twitter.com/MillionandUp';
-const LinkedInURL = 'https://www.linkedin.com/company/weelocol/';
-const InstagramURL = 'https://www.instagram.com/weelo_col/';
-const TiktokURL = 'https://www.tiktok.com/';
-const YoutubeURL = 'https://www.youtube.com/channel/UCmnVS7FdjhQM8Xqg3WRFO3A';
-const FacebookURL = 'https://www.facebook.com/weelo.col';
-
 class Header extends React.Component {
   render() {
     return (
@@ -126,22 +119,22 @@ class Header extends React.Component {
 
               <div className='menu__list--footer d-flex flex-column justify-content-center align-items-center'>
                 <div className='menu__list--footer--social'>
-                  <a href={TwitterURL} target='_blank' rel='noreferrer'>
+                  <a href={this.props.TwitterURL} target='_blank' rel='noreferrer'>
                     <img className='img-fluid' src={IconTwitter} alt='twitter logo' />
                   </a>
-                  <a href={LinkedInURL} target='_blank' rel='noreferrer'>
+                  <a href={this.props.LinkedInURL} target='_blank' rel='noreferrer'>
                     <img className='img-fluid' src={IconLinkedIn} alt='linkedIn logo' />
                   </a>
-                  <a href={InstagramURL} target='_blank' rel='noreferrer'>
+                  <a href={this.props.InstagramURL} target='_blank' rel='noreferrer'>
                     <img className='img-fluid' src={IconInstagram} alt='instagram logo' />
                   </a>
-                  <a href={TiktokURL} target='_blank' rel='noreferrer'>
+                  <a href={this.props.TiktokURL} target='_blank' rel='noreferrer'>
                     <img className='img-fluid' src={IconTiktok} alt='tiktok logo' />
                   </a>
-                  <a href={YoutubeURL} target='_blank' rel='noreferrer'>
+                  <a href={this.props.YoutubeURL} target='_blank' rel='noreferrer'>
                     <img className='img-fluid' src={IconYoutube} alt='youtube logo' />
                   </a>
-                  <a href={FacebookURL} target='_blank' rel='noreferrer'>
+                  <a href={this.props.FacebookURL} target='_blank' rel='noreferrer'>
                     <img className='img-fluid' src={IconFacebook} alt='facebook logo' />
                   </a>
                 </div>
