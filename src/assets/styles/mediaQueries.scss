@@ -1,0 +1,422 @@
+@import "./tokens/color.scss";
+@import "./tokens/typo.scss";
+@import "./tokens/spacing.scss";
+@import "./tokens/utilities.scss";
+
+@media screen and (min-width:520px){
+    .store{
+        &--separator{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .bot{
+        padding: 10px;
+        &__image{
+            width: 45px;
+            height: 45px;
+        }
+        &__message{
+            font-size: $font-size_small;
+            padding: 7px 10px;
+            left: -180%;
+        }
+    }
+    .mainBackground{
+        background-image: url($mainBackground1240);
+    }
+}
+
+@media screen and (min-width:576px){
+    .heading{
+        & h1{
+            max-width: 340px;
+            margin: auto;
+        }
+    }
+    .navigation{
+        &__menu{
+            &--list{
+                width: 55vw;
+            }
+            &--label{
+                width: 25px;
+                height: 20px;
+                &--bar{
+                    height: 4px;
+                }
+            }
+            &--input:checked~.navigation__menu--label .navigation__menu--label--bar1{
+                top: 9px;
+            }
+            &--input:checked~.navigation__menu--label .navigation__menu--label--bar3{
+                bottom: 8px;
+            }
+        }
+        
+    }
+    .menu__list{
+        &--user{
+            margin-top: 80px;
+            
+        }
+    }
+        
+}
+@media screen and (min-width:675px){
+    $font-size_extra-large:3.5rem;
+    $font-size_large:2.5rem;
+    $font-size_normal:2rem;
+    $font-size_small:1.8rem;
+    
+    $space_small:30px;
+
+    .menu__list--item{
+        &--anchor{
+            font-size: $font-size_large;
+        }
+
+        & ul li a{
+            font-size: $font-size_normal;
+        }
+    }
+    
+    .heading{
+        & h1{
+            font-size: $font-size_extra-large ;
+            line-height: $font-size_extra-large;
+        }
+        &__price{
+            font-size: $font-size_normal;
+        }
+    }
+    .screenTenant{
+        &__form{
+            font-size: $font-size_small;
+            & h4{
+                font-size: $font-size_large;
+            }
+            &--input{
+                font-size: $font-size_small;
+            }
+            &--button{
+                font-size: $font-size_normal;
+                margin-top: $space_small;
+                margin-bottom: $space_small;
+            }
+            
+        }
+        &__signals{
+            &--title{
+                & span{
+                    font-size: 5.5rem;
+                }
+                & h4{
+                    font-size: 2.2rem;
+                    width: 124px;
+                }
+
+            }
+            &--info{
+                font-size: $font-size_small
+            }
+        }
+    }
+    .store{
+        margin-bottom: $space_small;
+        & a img{
+            max-height: 45px;
+        }
+        &--separator{
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 45px;
+        }
+    }
+    .footer{
+        &__anchors{
+            font-size: $font-size_normal;
+        }
+        &__social .menu__list--footer--social a{
+            width: 35px;
+            height: 35px;
+        }
+        & .store{
+            & a img{
+                max-height: 45px;
+            }
+            &--separator{
+                margin: 0 15px;
+            }
+        }
+        & span{
+            font-size: $font-size_small;
+            line-height: $font-size_small;
+        } 
+    }
+    .modal{
+        &-header{
+            & .modal-title{
+                font-size: $font-size_large;
+            }
+            & .close{
+                font-size: $font-size_large;
+                width: 30px;
+                height: 30px;
+            }
+        } 
+        &-body{
+            font-size: $font-size_small;
+            line-height: $font-size_small;
+            & .form-footer .btn{
+                font-size: $font-size_normal;
+                margin-top: $space_normal;
+            }
+        }
+        &-footer{
+            padding: $space_normal;
+            & a{
+                font-size: $font-size_small;
+                
+            }
+        } 
+    }
+    .notFound{
+        & img{
+            max-width: 520px;
+            margin-top: $space_small;
+        }
+        &__anchor{
+            font-size: $font-size_normal;
+            margin-top: 40px;
+            
+        }
+    }
+}
+@media screen and (min-width:990px){
+    .bot{
+        right: 35px;
+        bottom: 35px;
+    }
+    .header{
+        padding: 0 35px;
+        &__logo{
+            width: 100px;
+        }
+    }
+    .heading{
+        padding-top: calc(75px + 67px);
+        margin-bottom: 75px;
+    }
+    .screenTenant{
+        &__container{
+            display: flex;
+            padding: $space_large;
+            &--desk{
+                margin-right: $space_large;
+                width: inherit;
+            }
+        }
+        &__signals{
+            border-radius: 0 $border-radius_large $border-radius_large 0;
+            margin-left: auto;
+            margin-right: -$space_large;
+            margin-top: -$space_large;
+            margin-bottom: -$space_large;
+            padding: $space_large;
+            &--info{
+                max-height: 260px;
+                width: 280px;
+                padding-right: $space_extra-small;
+                margin-bottom: 0;
+                margin-top: 25px;
+            }
+        }
+        
+    }
+    .store{
+        margin-bottom:0px;
+    }
+    .modal{
+        &-header{
+            padding-top: 35px;
+            & .close{
+                right: 40px;
+            }
+        }
+        &-body{
+            padding: 0 40px;
+        }
+        &-footer{
+            padding-bottom: 40px;
+        }
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2, 80px);
+        grid-template-areas:
+        "logo anchors anchors w store store"
+        "social social social w copyright copyright";
+        margin-top: 75px;
+        padding: $space_large 35px;
+        &__logo{
+            grid-area: logo;
+            margin: auto 0;
+            width: 125px;
+        }
+        &__anchors{
+            grid-area: anchors;
+            margin: 0 auto 0 0;
+            font-size: $font-size_normal;
+            
+        }
+        &__social{
+            grid-area: social;
+            width: 100%;
+            max-width: 620px;
+            margin: auto auto auto 0;
+            
+            
+            & .menu__list--footer--social {
+                margin: 0;
+                & a{
+                    margin: 0 auto 0 0;
+                }
+            }
+        }
+        & .store{
+            grid-area: store;
+            margin-bottom: 0;
+            align-items: center;
+            
+        }
+        & span{
+            grid-area: copyright;
+            align-items: center;
+        }
+
+    }
+    .notFound{
+        margin-bottom: -90px;
+        &__anchor{
+            font-size: 2.5rem;
+        }
+    }
+    
+}
+@media screen and (min-width:1152px){
+    .mainBackground{
+        background-image: url($mainBackground2200);
+    }
+}
+@media screen and (min-width:1280px){
+    .mainBackground{
+        height: 580px;
+    }
+    .heading {
+        & h1{
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            max-width: 500px;
+        }
+        &__price{
+            font-size: 2.7rem;
+            margin-top: 25px;
+        }
+    }
+
+    .screenTenant{
+        &__signals--title{
+            flex-direction: column;
+            align-items: flex-start;
+            & span{
+                font-size: 6.5rem;
+                line-height: 7rem;
+            }
+            & h4{
+                width: 100%;
+                font-size: $font-size_extra-large;
+            }
+        }
+        &__container--desk{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &__form{
+            font-size: $font-size_large;
+            & h4{
+                font-size: $font-size_extra-large;
+            }
+            &--input{
+                font-size: $font-size_large;
+            }
+            &--button{
+                font-size: 2.5rem;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+        & .form-group:nth-child(2){
+            margin-top: $space_normal;
+        }
+        & .form-group{
+            margin-top: $space_extra-small;
+        } 
+        
+    }
+    .footer__social .menu__list--footer--social a{
+        width: 40px;
+        height: 40px;
+    }
+    .modal{
+        &-header .modal-title{
+            font-size: $font-size_extra-large;
+        }
+        &-body{
+            font-size: $font-size_large;
+            line-height: $font-size_large;
+            & .form-footer .btn{
+                font-size: 2.2rem;
+            }
+        }
+        &-footer a{
+            font-size: 2.2rem;
+        }
+    }
+    .bot{
+        &__image{
+            width: 50px;
+            height: 50px;
+        }
+        &__message{
+            left: -170%;
+            top: -15%;
+        }
+    }
+    
+}
+@media screen and (min-width:1400px){
+    .mainBackground {
+        height: 630px;
+    }
+    .header{
+        padding: 0 $space_large;
+    }
+    .heading {
+        padding-top: calc(100px + 67px);
+        margin-bottom: 100px;
+    }
+    .footer{
+        margin-top: 100px;
+        padding: $space_large $space_large 75px $space_large;
+    }
+    .notFound{
+        margin-bottom: -115px;
+        padding-bottom: 115px;
+        padding-top: 115px
+    }
+    .bot{
+        right: 50px;
+    }
+}

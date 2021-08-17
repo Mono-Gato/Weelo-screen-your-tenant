@@ -47,4 +47,7 @@
     &:hover .bot__message{
         opacity: 1;
     }
+    &:active .bot__message{
+        opacity: 0;
+    }
 }

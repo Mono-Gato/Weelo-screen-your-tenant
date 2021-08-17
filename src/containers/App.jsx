@@ -5,6 +5,8 @@ import Layout from './Layout';
 import Home from '../pages/home';
 import NotFound from '../pages/NotFound';
 
+import '../assets/styles/mediaQueries.scss';
+
 function App() {
   return (
     <BrowserRouter>

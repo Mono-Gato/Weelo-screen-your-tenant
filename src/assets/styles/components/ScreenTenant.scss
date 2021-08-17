@@ -62,6 +62,7 @@
             align-items: center;
             & span{
                 font-size: 4.5rem;
+                line-height: 4.5rem;
                 margin-right: $space_extra-small;
             }
             & h4{
@@ -69,6 +70,7 @@
                 text-align: left;
                 font-weight: $black;
                 width: 102px;
+                margin-bottom: 0;
             }
         }
         &--info{

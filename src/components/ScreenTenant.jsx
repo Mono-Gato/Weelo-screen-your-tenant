@@ -79,15 +79,17 @@ class ScreenTenant extends React.Component {
   render() {
     return (
       <section className='screenTenant container'>
-        <div className='screenTenant__container col-11 mx-auto col-md-10 col-lg-12'>
-          <ScreenTenantForm
-            onChange={this.handleChange}
-            formValues={this.state.form}
-          />
-          <DownloadAppStore
-            GoogleURL={this.props.GoogleURL}
-            AppleURL={this.props.AppleURL}
-          />
+        <div className='screenTenant__container col-11 mx-auto col-md-10 col-lg-11 col-xl-10'>
+          <div className='screenTenant__container--desk'>
+            <ScreenTenantForm
+              onChange={this.handleChange}
+              formValues={this.state.form}
+            />
+            <DownloadAppStore
+              GoogleURL={this.props.GoogleURL}
+              AppleURL={this.props.AppleURL}
+            />
+          </div>
           <ScreenTenantSignals
             signals={this.state.signals}
           />

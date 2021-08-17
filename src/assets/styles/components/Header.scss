@@ -61,7 +61,7 @@
         right: -100vw;
         top: 0;
         bottom: 0;
-        width: auto;
+        width: 100vw;
         height: 100vh;
         flex-flow: column nowrap;
         transition: $transition;
@@ -253,6 +253,7 @@
     font-weight: $black;
     font-size: $font-size_normal;
     padding: $space_extra-small;
+    padding-right: 0;
         & img{
             margin-right: $space_mini;
             height: 31px;
@@ -269,5 +270,3 @@
         }
     }
 }
-
-
