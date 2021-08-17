@@ -13,7 +13,7 @@ class Home extends React.Component {
           <img src={NF404} alt='opps! 404 not found' className='img-fluid' />
 
           <Link
-            to='/'
+            to='Weelo-screen-your-tenant/'
             className='notFound__anchor'
           >
             Go to
