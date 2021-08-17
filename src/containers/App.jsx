@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/404' component={NotFound} />
-          <Redirect from='*' to='/404' />
+          <Route exact path='Weelo-screen-your-tenant/' component={Home} />
+          <Route path='Weelo-screen-your-tenant/404' component={NotFound} />
+          <Redirect from='*' to='Weelo-screen-your-tenant/404' />
         </Switch>
       </Layout>
     </BrowserRouter>
