@@ -9,7 +9,7 @@ screen your tenant es una prueba técnica para la empresa MILLION AND UP - weelo
 
 
 
-#### The Brief:
+## The Brief:
 **Nombre de la compañía**
 weelo
 
@@ -36,13 +36,13 @@ Comunicar por medio de este landing que somos una plataforma digital fácil de u
 
 ------------
 
-#### The Design:
+## The Design:
 
 See the mobile design [**Here**](https://xd.adobe.com/view/50bfc06f-b7d6-49aa-8d6b-eeaa1a5b1a14-05ec/ "** Here**")
 See the desktop design [**Here**](https://xd.adobe.com/view/e256e9bc-26bf-460b-99ad-f13cd54a1046-b705/ "** Here**")
 
 ------------
-#### The Code:
+## The Code:
 
 Para probar en su entorno de desarrollo.
 
@@ -54,12 +54,12 @@ npm run start
 ```
 ------------
 
-#### License:
+## License:
 
 Distributed under the MIT license.
 
 ------------
-#### About Me:
+## About Me:
 
 Juan David Niño Rodriguez
 
