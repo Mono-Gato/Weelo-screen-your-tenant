@@ -1,0 +1,50 @@
+@import "../tokens/color.scss";
+@import "../tokens/spacing.scss";
+@import "../tokens/utilities.scss";
+@import "../tokens/typo.scss";
+
+.bot{
+    position: fixed;
+    right: 4%;
+    bottom: 3%;
+    z-index: 9;
+    background-color: $white_contrast;
+    padding: $space_mini;
+    border-radius: $border-radius_normal;
+    box-shadow: $box-shadow-small;
+    cursor: pointer;
+    transition: $transition;
+    &__image{
+        width: 38px;
+        height: 38px;
+        background-image: url('../../images/bot/bot-main.svg');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: $transition;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:hover .bot__image{
+        background-image: url('../../images/bot/bot-message.svg');
+    }
+    &__message{
+        font-weight: $black;
+        font-size: 14px;
+        color: $white_contrast;
+        background: $gradient;
+        padding: $space_mini 8px;
+        border-radius: $border-radius_normal $border-radius_normal 0 $border-radius_normal;
+        transition: $transition;
+        width: max-content;
+        position: absolute;
+        left: -220%;
+        top: -25%;
+        opacity: 0;
+        
+    }
+    &:hover .bot__message{
+        opacity: 1;
+    }
+}
