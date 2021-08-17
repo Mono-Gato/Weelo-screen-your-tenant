@@ -17,7 +17,7 @@ class Header extends React.Component {
     return (
       <header className='header d-flex flex-row align-items-center justify-content-between'>
         <div className='header__logo'>
-          <Link to='/'>
+          <Link to='Weelo-screen-your-tenant/'>
             <img
               className='header__logo--image img-fluid'
               src={Logo}
