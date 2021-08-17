@@ -16,13 +16,13 @@ const GooglePlayURL = 'https://play.google.com/store';
 const AppStoreURL = 'https://www.apple.com/co/app-store/';
 //Menu Links
 const GetTheAppURL = 'https://play.google.com/store';
-const TenantScreeningPath = '/services/tenant-screening';
-const CollectRentOnline = '/services/collect-rent-online';
-const PayRentOnline = '/services/pay-rent-online';
-const OurServicesPath = '/services';
-const AboutPath = '/about';
-const TermOfUsePath = '/term-of-use';
-const PrivacyPolicyPath = '/privacy-policy';
+const TenantScreeningPath = 'Weelo-screen-your-tenant/services/tenant-screening';
+const CollectRentOnline = 'Weelo-screen-your-tenant/services/collect-rent-online';
+const PayRentOnline = 'Weelo-screen-your-tenant/services/pay-rent-online';
+const OurServicesPath = 'Weelo-screen-your-tenant/services';
+const AboutPath = 'Weelo-screen-your-tenant/about';
+const TermOfUsePath = 'Weelo-screen-your-tenant/term-of-use';
+const PrivacyPolicyPath = 'Weelo-screen-your-tenant/privacy-policy';
 //Link Bot
 const WhatsappURL = 'https://wa.link/mk55bm';
 
