@@ -2,7 +2,6 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import Heading from '../components/Heading';
 import Footer from '../components/Footer';
 import Bot from '../components/Bot';
 //SocialLinks
@@ -33,7 +32,7 @@ function Layout(props) {
       <Bot
         WhatsappURL={WhatsappURL}
       />
-      <div className='mainBackground' />
+
       <Header
         TwitterURL={TwitterURL}
         LinkedInURL={LinkedInURL}
@@ -47,10 +46,8 @@ function Layout(props) {
         PayRentOnline={PayRentOnline}
         AboutPath={AboutPath}
       />
-      <main>
-        <Heading />
-        {props.children}
-      </main>
+      {props.children}
+
       <Footer
         TwitterURL={TwitterURL}
         LinkedInURL={LinkedInURL}

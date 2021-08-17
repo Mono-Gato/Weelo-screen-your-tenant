@@ -22,31 +22,23 @@ class Footer extends React.Component {
         <div className='footer__anchors'>
           <Link
             to={this.props.OurServicesPath}
-            target='_blank'
-            rel='noopener noreferrer'
           >
             <li>our services</li>
           </Link>
           <Link
             to={this.props.AboutPath}
-            target='_blank'
-            rel='noopener noreferrer'
           >
             <li>about</li>
 
           </Link>
           <Link
             to={this.props.TermOfUsePath}
-            target='_blank'
-            rel='noopener noreferrer'
           >
             <li>term of use</li>
 
           </Link>
           <Link
             to={this.props.PrivacyPolicyPath}
-            target='_blank'
-            rel='noopener noreferrer'
           >
             <li>privacy policy</li>
 
