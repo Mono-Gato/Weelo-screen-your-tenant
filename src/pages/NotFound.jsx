@@ -1,20 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import NF404 from '../assets/images/bot/Bot-404.svg';
+import NF404 from '../assets/images/bot/404Error.svg';
+
+import '../assets/styles/components/NotFound.scss';
 
 class Home extends React.Component {
   render() {
     return (
       <>
-        <div className='NotFound'>
-          <img src={NF404} alt='Opps! 404 Not Found' className='img-fluid' />
-          <div className='NotFound__anchor'>
-            <Link to='/'>
-              Go to
-              <b>Home</b>
-            </Link>
-          </div>
+        <div className='notFound'>
+          <img src={NF404} alt='opps! 404 not found' className='img-fluid' />
+
+          <Link
+            to='/'
+            className='notFound__anchor'
+          >
+            Go to
+            {' '}
+            <b>Home</b>
+          </Link>
+
         </div>
       </>
     );

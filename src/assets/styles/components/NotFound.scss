@@ -1,0 +1,45 @@
+@import "../tokens/color.scss";
+@import "../tokens/typo.scss";
+@import "../tokens/spacing.scss";
+@import "../tokens/utilities.scss";
+
+.notFound{
+    width: 100%;
+    min-height: 50vh ;
+    background: $gradient;
+    background-image: url('../../images/background/background-1240px-min.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -70px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: $space_normal;
+    padding-right: $space_normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__anchor{
+        margin-top: $space_normal;
+        text-decoration: none;
+        font-weight: $light;
+        font-size: $font-size_normal;
+        padding: $space_extra-small;
+        background: $gradient;
+        color: $white_contrast;
+        transition: $transition;
+        border-radius: $border-radius_normal;
+        box-shadow: $box-shadow;
+
+        & b{
+            font-weight: $black;
+        }
+        &:hover{
+            color: $white_contrast;
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+    }
+
+}

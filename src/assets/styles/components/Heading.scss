@@ -25,5 +25,8 @@
         & b{
             font-weight: $bold;
         }
+        & span{
+            text-decoration: line-through
+        };
     }
 }

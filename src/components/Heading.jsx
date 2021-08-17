@@ -15,7 +15,11 @@ class Heading extends React.Component {
           {' '}
           <b>$9.99</b>
           {' '}
-          | $30.00
+          |
+          {' '}
+          <span>
+            $30.00
+          </span>
         </p>
       </section>
     );
