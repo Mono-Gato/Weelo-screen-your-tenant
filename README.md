@@ -1,6 +1,6 @@
-[![weelo](https://raw.githubusercontent.com/Mono-Gato/Weelo-screen-your-tenant/main/readme/Readme.jpg "weelo")](screen-your-tenant.netlify.app/ "weelo")
+[![weelo](https://raw.githubusercontent.com/Mono-Gato/Weelo-screen-your-tenant/main/readme/Readme.jpg "weelo")](http://screen-your-tenant.netlify.app)
 
->See **weelo - screen your tenant** at "screen-your-tenant.netlify.app"
+>See **weelo - screen your tenant** at [https://screen-your-tenant.netlify.app](http://screen-your-tenant.netlify.app)
 
 # What is weelo - screen your tenant?
 screen your tenant es una prueba técnica para la empresa MILLION AND UP - weelo
