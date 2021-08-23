@@ -1,4 +1,4 @@
-[![weelo](https://raw.githubusercontent.com/Mono-Gato/Weelo-screen-your-tenant/main/readme/Readme.jpg "weelo")](screen-your-tenant.netlify.app "weelo")
+[![weelo](https://raw.githubusercontent.com/Mono-Gato/Weelo-screen-your-tenant/main/readme/Readme.jpg "weelo")](screen-your-tenant.netlify.app/ "weelo")
 
 >See **weelo - screen your tenant** at "screen-your-tenant.netlify.app"
 
